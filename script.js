@@ -19,11 +19,11 @@ var highlightImage = document.querySelector('#highlightImage')
 
 console.log(highlightImage)
 
-function changeImageL() {
+function changeImageR() {
     highlightImage.src = 'images/pixel-ninjas-2.png'
 
 }
-function changeImageR() {
+function changeImageL() {
     highlightImage.src = 'images/stonepunk.png'
 
 }
