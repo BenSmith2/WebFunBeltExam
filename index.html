@@ -4,9 +4,113 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Gaming Dojo</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     
+    <div class="brandColor"></div>
+    
+    <div class="nav">
+        <div class="navPad">
+            <!-- navPad is used for creating a p[lace where it will force inner content to stop expanding out if user is zooming out  -->
+            <div class="logo">
+                <h1>Gaming<h1>Dojo</h1></h1>
+            </div>
+            <div class="navRight">
+                <select name="money" id="money">
+                    <option value="EU">EU &#8364</option>
+                    <option value="dollar">US $</option>
+                </select>
+                <div class="shoppingCart">
+                    <img src="./images/cart-light.png" alt="Shopping Cart">
+                    <span id="shoppingCart"></span>
+                </div>
+                <img src="./images/search-light.png" alt="Search">
+            </div>
+        </div>
+    </div>
+    
+    <div class="wrapper"> \
+        <!-- this is used for controlling outside content picels getting everything to line up nicely -->
+
+        <div class="highlights">
+            <h3>Highlights</h3>
+            <div class="highlightImages">
+                <img onclick="changeImageL()" id="chevronLeft" src="./images/chevron-left.png" alt="image to the left">
+                <img id="highlightImage" src="./images/stonepunk.png" alt="Stone Punk Game Banner">
+                <img onclick="changeImageR()" id="chevronRight" src="./images/chevron-left.png" alt="image to the right">
+            </div>
+            <div class="highlightTabs">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+
+        <div class="store">
+
+            <div class="gameContent">
+                <img src="./images/cafe-neko.png" alt="Cafe Neko">
+                <div class="gameAbout">
+                    <div class="gameAboutTop">
+                        <h3>Cafe Neko: Gold Edition</h3>
+                        <img src="./images/windows.png" alt="Windows Compatible">
+                        <img src="./images/apple.png" alt="">
+                    </div>
+                    <div class="gameAboutBottom">
+                        <Span>-20%</Span>
+                            <div class="gameAboutBottomCost">
+                                <span>&#8364 14.98 </span>
+                                <span>&#8364 10.49</span>
+                            </div>
+                        <button onclick="buyBtnA()">Buy</button>
+                    </div>
+                </div>
+            </div>
+            <div class="gameContent">
+                <img src="./images/pixel-ninjas-2.png" alt="Pexel Ninjas 2">
+                <div class="gameAbout">
+                    <div class="gameAboutTop">
+                        <h3>Pixel Ninjas 2</h3>
+                        <img src="./images/windows.png" alt="Windows Compatible">
+                        <img src="./images/apple.png" alt="">
+                    </div>
+                    <div class="gameAboutBottom">
+                        <Span>-10%</Span>
+                            <div class="gameAboutBottomCost">
+                                <span>&#8364 8.19 </span>
+                                <span>&#8364 7.39</span>
+                            </div>
+                        <button onclick="buyBtnA()">Buy</button>
+                    </div>
+                </div>
+            </div>
+            <div class="gameContent">
+                <img src="./images/stonepunk.png" alt="Stone Punk 2088 b.c">
+                <div class="gameAbout">
+                    <div class="gameAboutTop">
+                        <h3>Stone Punk 2077 BCE</h3>
+                        <img src="./images/windows.png" alt="Windows Compatible">
+                        <img src="./images/apple.png" alt="Apple Compatible">
+                        <img onclick="alert('This game is supported on Linux')" src="./images/linux.png" alt="Compatible on Linux">
+                    </div>
+                    <div class="gameAboutBottom">
+                        <Span>NEW</Span>
+                            <div class="gameAboutBottomCost">
+                                <span></span>
+                                <span>&#8364 19.99</span>
+                            </div>
+                        <button onclick="buyBtnA()">Buy</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
