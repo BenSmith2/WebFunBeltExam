@@ -24,6 +24,6 @@ function changeImageL() {
 
 }
 function changeImageR() {
-    highlightImage.src = '/images/stonepunk.png'
+    highlightImage.src = 'images/stonepunk.png'
 
 }
